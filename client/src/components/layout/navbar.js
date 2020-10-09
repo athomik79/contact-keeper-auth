@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-const navbar = ({ title, icon }) => {
+const Navbar = ({ title, icon }) => {
   return (
     <div className='navbar bg-primary'>
       <h1>
@@ -26,14 +26,14 @@ const navbar = ({ title, icon }) => {
   );
 };
 
-navbar.propTypes = {
+Navbar.propTypes = {
   title: PropTypes.string.isRequired,
   icon: PropTypes.string,
 };
 
-navbar.defaultProps = {
+Navbar.defaultProps = {
   title: 'Contact Keeper',
   icon: 'fas fa-id-card-alt',
 };
 
-export default navbar;
+export default Navbar;
